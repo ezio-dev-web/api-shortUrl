@@ -31,7 +31,7 @@ app.use(
 )
 app.use(express.json())
 app.use(cookieParser())
-app.use(express.static("public"));
+//app.use(express.static("public"));
 app.use('/', redirectRouter) //-optional
 app.use('/api/v1/auth', authRouter)
 app.use('/api/v1/links', linkRouter) //
